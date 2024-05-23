@@ -1,0 +1,416 @@
+:root {
+  --a1: #9c4c17;
+  --a2: #79410d;
+  --a3: #F7FAFF;
+  --a4: rgba(0, 0, 0, 0.8);
+  --a5: rgb(238, 198, 125);
+}
+
+/* Base styles for all screen sizes */
+body {
+  font: 100% Lato, Arial, Sans Serif;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, rgb(0, 0, 139) 100vh, rgb(0, 0, 51) 100vh, rgb(0, 0, 51));      
+}
+
+header.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+header .keep {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--a4);
+  margin-left: 0px;
+  box-shadow: 0px 0px 0px;
+}
+
+header .logo {
+  font-size: 40px;
+  font-family: georgia, serif;
+  color: white;
+  padding: 100px;
+}
+
+header .imagemheader {
+  width: 80px;
+  height: 80px;
+  margin-left: -300px;
+  margin-top: 0px;
+  float: left;
+}
+
+header ul {
+  display:inline;
+  justify-content: right; /* Align items to the end (right) */
+  padding-right: 700px; /* Move items 700px to the right */
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+header ul li.button {
+  padding-right: 0px;
+}
+
+
+header ul li.button .botao {
+  border: solid 1px var(--a5);
+  border-radius: 20px;
+  color: white;
+  background-color: var(--a5);
+  transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+  padding: 10px 20px;
+  margin-left: 190px;
+}
+
+header ul li.button .botao:hover {
+  border: solid 1px var(--a5);
+  background-color: var(--a5);
+  color: white;
+  transform: scale(1.2);
+}
+
+header ul li.button .botao i {
+  margin-right: 10px; /* Adjust margin as needed */
+}
+
+main.informaçõesinicio {
+  padding: 20px;
+  width: 1200px;
+  margin: auto;
+  position: absolute;
+  margin-left: 150px;
+  top: 300px;
+}
+
+main .container {
+  background-color: whitesmoke;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+}
+
+main .titulosobreportifolio {
+  width: 500px;
+  height: 0px;
+  margin-top: -700px;
+  margin-left: 40px;
+  font-size: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+ .textooqueumportifolio {
+  width: 1400px;
+  margin-top: -550px;
+  margin-left: -450px;
+  font-size: 25px;
+}
+
+
+main .titulo {
+  margin-top: -330px;
+  margin-left: -1450px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 40px;
+  width: 1200px;
+  float: none;
+}
+
+main .texto {
+  width: 1000px;
+  height: 500px;
+  font-size: 25px;
+  margin-left: -1150px;
+  margin-top: 250px;
+}
+
+main .lista {
+  margin-left: -3000px;
+  margin-top: 100px;
+  width: 3000px;
+  float: none;
+}
+
+.wrapper {
+  width: 3000px;
+  height: 2000px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  z-index: -294038497;
+  animation: changeBackgroundColor 14s ease infinite;
+}
+
+@keyframes changeBackgroundColor {
+  0% {
+      background-color: var(--a1);
+  }
+  50% {
+      background-color: var(--a2);
+  }
+  100% {
+      background-color: var(--a1);
+  }
+}
+
+.wav {
+  width: 3700px;
+  height: 2905px;
+  position: absolute;
+  top: -25%;
+  left: 50%;
+  margin-left: -1800px;
+  margin-top: -2000px;
+  border-radius: 35%;
+  background: rgba(255, 255, 255, .75);
+  animation: wav 15s infinite linear;
+}
+
+@keyframes wav {
+  from { transform: rotate(0deg);}
+  to { transform: rotate(360deg);}
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+ul li:last-child {
+  margin-right: 0;
+}
+
+.iu {
+  top: -10px;
+  margin-left: 20px;
+}
+
+aside {
+  width: 100%;
+  background: white;
+  padding: 0px 0px 0px 0px;
+  position: absolute;
+  left: 0;
+  top: -10px;
+  height: 150px;
+  box-shadow: 0px 3px 5px;
+  overflow: hidden;
+  z-index: 99;
+  display: inline;
+  height: 100px;
+}
+
+li {
+  list-style-type: none;
+}
+main .container {
+  background-color: whitesmoke;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+footer.contacts {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px ;
+  margin-top: 1200px;
+  height: 200px;
+}
+
+footer .contact {
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+
+footer .contact h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+footer .contact p {
+  margin: 5px 0;
+}
+
+
+footer .contactum {
+  margin-left: 800px;
+  margin-top: -94px;
+}
+
+footer .contactum h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+footer .contactum p {
+  margin: 5px 0;
+}
+
+
+footer .contactdois {
+  margin-left: -800px;
+  margin-top: -94px;
+}
+
+
+footer .contactdois h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+footer .contactdois p {
+  margin: 5px 0;
+}
+
+/* Responsive styles */
+
+/* Smartphones (1280x720) */
+@media (max-width: 1280px) {
+  header.main {
+      padding: 10px;
+  }
+
+  header .logo {
+      font-size: 1.5em;
+  }
+
+  header .imagemheader {
+      width: 60px;
+  }
+
+  header ul li.button .botao {
+      padding: 8px 16px;
+  }
+
+  main .titulosobreportifolio {
+      font-size: 1.5em;
+      margin-left: 20px;
+      width: auto;
+  }
+
+  main .textooqueumportifolio {
+      font-size: 1em;
+      width: auto;
+      margin-left: 20px;
+  }
+
+  main .titulo {
+      font-size: 1.5em;
+      margin-left: 20px;
+      width: auto;
+  }
+
+  main .texto {
+      font-size: 1em;
+      width: auto;
+      margin-left: 20px;
+  }
+
+  main .container {
+      width: auto;
+      height: auto;
+      margin: 20px;
+      padding: 10px;
+  }
+}
+
+/* Tablets (2048x1536) */
+@media (min-width: 1281px) and (max-width: 2048px) {
+  header.main {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 20px;
+  }
+
+  header .logo {
+      font-size: 2em;
+  }
+
+  header .imagemheader {
+      width: 80px;
+  }
+
+  header ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+  }
+
+  header ul li.button {
+      margin: 0 10px;
+  }
+
+  main .titulosobreportifolio, main .titulo {
+      font-size: 2em;
+  }
+
+  main .textooqueumportifolio, main .texto {
+      font-size: 1.2em;
+  }
+
+  main .container {
+      width: auto;
+      height: auto;
+      margin: 20px;
+      padding: 10px;
+  }
+}
+
+/* Desktops (2560x1440) */
+@media (min-width: 2049px) {
+  header.main {
+      padding: 30px;
+  }
+
+  header .logo {
+      font-size: 2.5em;
+  }
+
+  header .imagemheader {
+      width: 120px;
+  }
+
+  header ul li.button .botao {
+      padding: 12px 24px;
+  }
+
+  main .titulosobreportifolio, main .titulo {
+      font-size: 2.5em;
+  }
+
+  main .textooqueumportifolio, main .texto {
+      font-size: 1.5em;
+  }
+
+  main .container {
+      width: auto;
+      height: auto;
+      margin: 20px;
+      padding: 10px;
+  }
+} 

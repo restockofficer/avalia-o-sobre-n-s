@@ -1,0 +1,283 @@
+:root {
+  --a1: #9c4c17;
+  --a2: #79410d;
+  --a3: #F7FAFF;
+  --a4: rgba(0, 0, 0, 0.8);
+  --a5: rgb(238, 198, 125);
+}
+
+body {
+  font: 100% Lato, Arial, Sans Serif;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: linear-gradient(to bottom, rgb(0, 0, 139) 100vh, rgb(0, 0, 51) 100vh, rgb(0, 0, 51));
+  font-family: 'Arial', sans-serif;
+}
+
+header.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+}
+
+header .keep {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: var(--a4);
+  box-shadow: 0px 0px 0px;
+}
+
+header .logo {
+  font-size: 40px;
+  font-family: georgia, serif;
+  color: white;
+  padding: 90px;
+}
+
+header .imagemheader {
+  width: 80px;
+  height: 80px;
+  margin-left: -300px;
+  margin-top: 0px;
+  float: left;
+}
+
+header ul {
+  display: inline;
+  justify-content: right;
+  padding-right: 700px;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+header ul li.button {
+  padding-right: 0px;
+}
+
+header ul li.button .botao {
+  border: solid 1px var(--a5);
+  border-radius: 20px;
+  color: white;
+  background-color: var(--a5);
+  transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+  padding: 10px 20px;
+  margin-left: 190px;
+}
+
+header ul li.button .botao:hover {
+  border: solid 1px var(--a5);
+  background-color: var(--a5);
+  color: white;
+  transform: scale(1.2);
+}
+
+header ul li.button .botao i {
+  margin-right: 10px;
+}
+.hardskill{
+  margin-left: 100px;
+  margin-top: 0px;
+  width: 1100px;
+}
+.softskill{
+  margin-left: 100px;
+  margin-top: 0px;
+  width: 1100px;
+}
+.intereces{
+  margin-left: 100px;
+  margin-top: 0px;
+  width: 1100px;
+}
+
+
+.foto{
+  width: 130px;
+  margin-left: 1100px;
+  border-radius: 300px;
+  margin-top: 10px;
+  box-shadow: 0px 1px 10px;
+
+}
+.fotohardskills{
+  width: 300px;
+  height: 200px;
+  margin-left: 0px;
+  border-radius: 30px;
+  margin-top: 10px;
+ 
+}
+
+article {
+  width: 1400px;
+  margin-top: 300px;
+  margin-left: 70px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.titulo, .titulodois, .titulotres, .tituloquatro {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.titulo {
+  font-size: 40px;
+  margin-bottom: 20px;
+  margin-top: -100px;
+}
+
+.titulodois {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.titulotres {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+.tituloquatro{
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.texto {
+  font-size: 20px;
+  
+}
+
+.wrapper {
+  width: 3300px;
+  height: 4000px;
+  position: absolute;
+  left: 50%;
+  top: 600px;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  z-index: -294038497;
+  animation: changeBackgroundColor 14s ease infinite;
+}
+
+@keyframes changeBackgroundColor {
+  0% {
+      background-color: var(--a1);
+  }
+  50% {
+      background-color: var(--a2);
+  }
+  100% {
+      background-color: var(--a1);
+  }
+}
+
+.wav {
+  width: 3700px;
+  height: 2905px;
+  position: absolute;
+  top: -25%;
+  left: 50%;
+  margin-left: -1800px;
+  margin-top: -2000px;
+  border-radius: 35%;
+  background: rgba(255, 255, 255, .75);
+  animation: wav 15s infinite linear;
+}
+
+@keyframes wav {
+  from { transform: rotate(0deg);}
+  to { transform: rotate(360deg);}
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+ul li:last-child {
+  margin-right: 0;
+}
+
+aside {
+  width: 100%;
+  background: white;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  top: -10px;
+  height: 150px;
+  box-shadow: 0px 3px 5px;
+  overflow: hidden;
+  z-index: 99;
+  display: inline;
+  height: 100px;
+}
+footer.contacts {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px ;
+  margin-top: 10px;
+  height: 200px;
+}
+
+footer .contact {
+  margin-left: 0px;
+  margin-top: 0px;
+}
+
+
+footer .contact h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+footer .contact p {
+  margin: 5px 0;
+}
+
+
+footer .contactum {
+  margin-left: 800px;
+  margin-top: -94px;
+}
+
+footer .contactum h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+footer .contactum p {
+  margin: 5px 0;
+}
+
+
+footer .contactdois {
+  margin-left: -800px;
+  margin-top: -94px;
+}
+
+
+footer .contactdois h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+footer .contactdois p {
+  margin: 5px 0;
+}
